@@ -1,0 +1,12 @@
+
+while True:
+    num = int(input("input a number: "))
+    if num % 2 == 0:
+        print("even number")
+    else:
+        print("odd number")
+
+    again = input("run again? yes/no: ")
+    if again == "no" :
+        print("good bye")
+        break
