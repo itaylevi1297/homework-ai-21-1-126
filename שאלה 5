@@ -1,0 +1,16 @@
+num_students = int(input("Enter number of students: "))
+
+total = 0
+count = 0
+
+while count < num_students:
+    grade = float(input(f"Enter grade for student {count + 1}: "))
+
+    if 0 <= grade <= 100:
+        total += grade
+        count += 1
+    else:
+        print("Invalid grade, try again")
+
+average = total / num_students
+print("Average grade:", average)
